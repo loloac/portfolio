@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Portfolio - Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary": "#ffffff",
+                        "on-surface-variant": "#44474e",
+                        "on-primary-container": "#87a0cd",
+                        "tertiary-fixed": "#ffddb9",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#d3e4fe",
+                        "tertiary-container": "#4f2f00",
+                        "inverse-surface": "#2d3133",
+                        "error-container": "#ffdad6",
+                        "on-secondary-container": "#54647a",
+                        "secondary-fixed-dim": "#b7c8e1",
+                        "tertiary": "#321c00",
+                        "on-error-container": "#93000a",
+                        "surface-bright": "#f7f9fb",
+                        "inverse-primary": "#aec7f7",
+                        "surface": "#f7f9fb",
+                        "on-secondary-fixed": "#0b1c30",
+                        "primary-fixed": "#d6e3ff",
+                        "on-primary-fixed": "#001b3d",
+                        "surface-tint": "#465f88",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed-variant": "#38485d",
+                        "background": "#f7f9fb",
+                        "on-surface": "#191c1e",
+                        "primary": "#002046",
+                        "on-tertiary-fixed-variant": "#623f0f",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-highest": "#e0e3e5",
+                        "on-primary": "#ffffff",
+                        "surface-container-high": "#e6e8ea",
+                        "outline": "#74777f",
+                        "secondary-container": "#d0e1fb",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#2b1700",
+                        "primary-container": "#1b365d",
+                        "tertiary-fixed-dim": "#f1bd81",
+                        "surface-dim": "#d8dadc",
+                        "inverse-on-surface": "#eff1f3",
+                        "on-background": "#191c1e",
+                        "secondary": "#505f76",
+                        "outline-variant": "#c4c6cf",
+                        "surface-container": "#eceef0",
+                        "primary-fixed-dim": "#aec7f7",
+                        "on-primary-fixed-variant": "#2e476f",
+                        "on-tertiary-container": "#c6965e",
+                        "surface-variant": "#e0e3e5",
+                        "surface-container-low": "#f2f4f6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "section-padding": "80px",
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "container-max": "1120px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["\"Source Serif 4\""],
+                        "body-md": ["\"Source Serif 4\""],
+                        "label-sm": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "display": ["Inter"],
+                        "headline-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "headline-md": ["20px", { "lineHeight": "1.4", "fontWeight": "500" }],
+                        "display": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header id="site-nav" class="bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md fixed top-0 w-full border-b border-outline-variant/30 dark:border-outline/20 z-50">
+<div class="max-w-container-max mx-auto px-gutter flex justify-between items-center h-20">
+<a class="font-display text-headline-lg text-primary dark:text-primary-fixed-dim hover:opacity-80 transition-opacity cursor-pointer" href="#" onclick="showScreen('front'); return false;">Lorenzo Andersen Carmody</a>
+<nav class="hidden md:flex space-x-8">
+
+
+
+
+</nav>
+<a href="https://docs.google.com/document/d/1ri48w170SlTvipAshndMcoEiwqz6H_VfhuVeWQo_pm0/edit?tab=t.wg817v75ka1s" target="_blank" class="hidden md:inline-flex bg-primary-container text-on-primary font-label-sm text-label-sm px-6 py-3 rounded hover:bg-primary-container/90 transition-colors cursor-pointer">Resume (EN)</a><a href="https://docs.google.com/document/d/1m_JIn0_QAkq9sLuyO5MpPRH6VKQoHIEXfMNPZTCgmLM/edit?tab=t.ij7bmptgao9b" target="_blank" class="hidden md:inline-flex bg-primary-container text-on-primary font-label-sm text-label-sm px-6 py-3 rounded hover:bg-primary-container/90 transition-colors cursor-pointer ml-2">Resume (ES)</a>
+<!-- Mobile Menu Button -->
+<button class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+
+<div id="screen-front" class="app-screen"><main class="flex-grow pt-[120px] md:pt-[160px] pb-section-padding px-margin-mobile md:px-gutter max-w-container-max mx-auto w-full">
+<div class="mb-12">
+<h1 class="font-display text-display text-primary mb-4">Project Showcase</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-[700px]">An overview of different university and work-related projects i've undertaken in recent years</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Project 1 -->
+<div class="group flex flex-col bg-surface-container-lowest border border-outline-variant/30 rounded-lg p-6 hover:-translate-y-2 hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition-all duration-300 ease-out cursor-pointer" onclick="showScreen('plan')">
+<a href="#" onclick="showScreen('plan'); return false;" class="w-full h-48 rounded overflow-hidden mb-6 relative block cursor-pointer">
+<img alt="Sustainable Urban Mobility" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4MMRev0JbCxk_wVmLYmk_Ocw9ZD7Dnrk8F2sfNAGSyL13Orz6ViDYx57Zc8ItYIijyDSAHeE5MZVjHnRS8T2src9-DCGxc2kKYXZEZJfad6LRovp9Pt6PionXN4cCRq5hx1gTkGAs_SGyxHs3nauPukeLvoSjacQjUs0v1jen1-0Mlp3UOWhA3NkVzHwRhxmBcpg3tbrWev6_XXnwtnVT4hWK7yQqBIH2CTk8G7lt5pZqBiiZe9TqaGVcL4qysE7SLQ">
+</a>
+<h3 class="font-headline-md text-headline-md text-primary mb-2 group-hover:text-primary-container transition-colors">El Plan de la Mariposa</h3><p class="font-body-md text-body-md text-on-surface-variant mb-6 min-h-[120px]" style="height: auto; overflow: visible;">An overview of the commercial merchandise, logistics, and end-to-end business operations i undertook for the band&nbsp; "El Plan de la Mariposa"</p>
+
+<div class="mt-auto">
+<h4 class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-3">Skills&nbsp;</h4>
+<div class="flex flex-wrap gap-2"><span class="bg-surface-variant text-on-surface-variant font-label-sm text-[11px] px-2.5 rounded py-1">Business Insights</span><span class="bg-surface-variant text-on-surface-variant font-label-sm text-[11px] px-2.5 rounded py-1">Financial Planning</span><span class="bg-surface-variant text-on-surface-variant font-label-sm text-[11px] px-2.5 rounded py-1">Logistics</span><span class="bg-surface-variant text-on-surface-variant font-label-sm text-[11px] px-2.5 rounded py-1">Design</span><span class="bg-surface-variant text-on-surface-variant font-label-sm text-[11px] px-2.5 rounded py-1">People Management</span><span class="bg-surface-variant text-on-surface-variant font-label-sm text-[11px] px-2.5 rounded py-1">Work Experience</span><span class="bg-surface-variant text-on-surface-variant font-label-sm text-[11px] px-2.5 rounded py-1">Excel</span></div>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="group flex flex-col bg-surface-container-lowest border border-outline-variant/30 rounded-lg p-6 hover:-translate-y-2 hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition-all duration-300 ease-out cursor-pointer" onclick="showScreen('polymkt')">
+<div class="w-full h-48 rounded overflow-hidden mb-6 relative">
+<img alt="Polymarket Logo" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKx0KDmGyOTehT1gxgRZ7RG-ieuMjdTpWbJm_fdnLcf-I0nk6Pq5tOy9pkjkT789Kddl-Y1CrWtwTnjQ2pd6ker5DQ-uq-PBpovDxkjRtWk3fAnInpsFavYHhZX3MmNlCBdp9wEbXLUZwa_7Wo9OW6abZEAuS819ez2gv48KS7XKwoOJhSiKtz2J5AAam17N13FftTY0xpllZXy42xs1YedgRKZa4icqKvk_quTwYntUzOjXqXxZRTsqnnz9_r0iFfCg">
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2 group-hover:text-primary-container transition-colors">Prediction Market Thesis (ongoing)</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 mb-6">Graduate thesis project on prediction markets focused on their predictive capacity in different contexts.</p>
+<div class="mt-auto">
+<h4 class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-3">Skills</h4>
+<div class="flex flex-wrap gap-2"><span class="bg-surface-variant text-on-surface-variant font-label-sm text-[11px] px-2.5 rounded py-1">Data Analysis</span><span class="bg-surface-variant text-on-surface-variant font-label-sm text-[11px] px-2.5 rounded py-1">Advanced SQL</span><span class="bg-surface-variant text-on-surface-variant font-label-sm text-[11px] px-2.5 rounded py-1">Python</span><span class="bg-surface-variant text-on-surface-variant font-label-sm text-[11px] px-2.5 rounded py-1">Statistical Modeling<br></span><span class="bg-surface-variant text-on-surface-variant font-label-sm text-[11px] px-2.5 rounded py-1">Quantitative Methods</span><span class="bg-surface-variant text-on-surface-variant font-label-sm text-[11px] px-2.5 rounded py-1">Markets</span></div>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="group flex flex-col bg-surface-container-lowest border border-outline-variant/30 rounded-lg p-6 hover:-translate-y-2 hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition-all duration-300 ease-out cursor-pointer" onclick="showScreen('tdcs')">
+<div class="w-full h-48 rounded overflow-hidden mb-6 relative">
+<img alt="Urban Micro-Housing" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7-S5biDRRq1wv4HqUZqIV_vQsxRrFe1U_RzrMasPLCrQeKDsp_3KB8M-LNRiYsZzMqRrOtHngLShQFR89veFAnxYUdnUusgvLZuHW2Anh9IOOKEskeEw9ium5TDgKeTo0vuRys2vmT9Owzz2BA8NnwK1H0E1JnsU1ZYJQHVd8SB2gYYyim1BkF-R6Ao3mOd53gw7x6kANscQnzW-IuiwTEtKwWLR1_Do-I-5PLRTRoaCsBPE2_IU2jX4cg5ns59Yb6A">
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2 group-hover:text-primary-container transition-colors">Neuroscience Data Analysis</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 mb-6">Reproduction and further analysis of an academic paper on Transcranial Direct Current Stimulation (tDCS)</p>
+<div class="mt-auto">
+<h4 class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-3">Skills&nbsp;</h4>
+<div class="flex flex-wrap gap-2"><span class="bg-surface-variant text-on-surface-variant font-label-sm text-[11px] px-2.5 rounded py-1">Neuroscience</span><span class="bg-surface-variant text-on-surface-variant font-label-sm text-[11px] px-2.5 rounded py-1">Python</span><span class="bg-surface-variant text-on-surface-variant font-label-sm text-[11px] px-2.5 rounded py-1">Data Analysis</span><span class="bg-surface-variant text-on-surface-variant font-label-sm text-[11px] px-2.5 rounded py-1">Technical Writing</span><span class="bg-surface-variant text-on-surface-variant font-label-sm text-[11px] px-2.5 rounded py-1">Academic Research</span></div>
+</div>
+</div>
+<!-- Project 4 -->
+<div class="group flex flex-col bg-surface-container-lowest border border-outline-variant/30 rounded-lg p-6 hover:-translate-y-2 hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition-all duration-300 ease-out cursor-pointer" onclick="showScreen('peya')">
+<div class="w-full h-48 rounded overflow-hidden mb-6 relative">
+<img alt="PedidosYa Logo" class="absolute inset-0 w-full h-full object-cover p-6 group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs8lTc7p6vpje0oK0U6MHnEOSM6mzOcYVZetettHU8VFyuOzDtrSx97s_pafZCnPmm40iguKw-VUzCjxInMOXrd0knef9C-T7pYoIMRIMapT94h63RK77skOVQgIwCo4gHRpT7Ws8PwVMGpRSYfcGPbhgv0KrJfi3hv9EfzCXzbJZFT9SPWEZTU90w2TrYWq-oCfJJ8lg5kNBKWIC8uAKkm3tECdYjTdcUi3C2n9J9KDyTAV-tUGsBa-8iBICRNSxoMg">
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2 group-hover:text-primary-container transition-colors">Nudges &amp; PedidosYa</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 mb-6">Use of Nudges in UX design to foster healthy dietary choices via delivery apps.&nbsp;</p>
+<div class="mt-auto">
+<h4 class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-3">Skills</h4>
+<div class="flex flex-wrap gap-2"><span class="bg-surface-variant text-on-surface-variant font-label-sm text-[11px] px-2.5 rounded py-1">UI Design</span><span class="bg-surface-variant text-on-surface-variant font-label-sm text-[11px] px-2.5 rounded py-1">Behavioral Economics</span><span class="bg-surface-variant text-on-surface-variant font-label-sm text-[11px] px-2.5 rounded py-1">UX Research</span><span class="bg-surface-variant text-on-surface-variant font-label-sm text-[11px] px-2.5 rounded py-1">Qualitative Methods</span></div>
+</div>
+</div>
+<!-- Project 5 -->
+<div class="group flex flex-col bg-surface-container-lowest border border-outline-variant/30 rounded-lg p-6 hover:-translate-y-2 hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition-all duration-300 ease-out cursor-pointer" onclick="showScreen('absentee')">
+<div class="w-full h-48 rounded overflow-hidden mb-6 relative">
+<img alt="Resilient Infrastructure" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJkv-7Arhgulks1iZ32dNSTLoNsSKEVfEbmE5iCTkwrM5wyX5SJZRNcBOJAH3BQz4KDfWp55OG8Z8r5Pe_wd33j8P3PappVzLMSjmlqyMyLpSs5FnZNY-96SKydPPENwws1-U-BfI-GGWLfQquQ6KTbkCVrJhj2uoeLyBCH4l-4PYrEZKLrQcwuPzt1MjC4jigtW4GYwdl9atTy5x7XoLERqCD0QRWEOQvJXyi2UtJ58GTIh3q9R1Tm57IubteosU07g">
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2 group-hover:text-primary-container transition-colors">Data Science project on Pruebas Aprender</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 mb-6">Data Science and ML project focused on analyzing absenteeism trends across schools in Argentina.</p>
+<div class="mt-auto">
+<h4 class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-3">Skills</h4>
+<div class="flex flex-wrap gap-2"><span class="bg-surface-variant text-on-surface-variant font-label-sm text-[11px] px-2.5 rounded py-1">GitHub</span><span class="bg-surface-variant text-on-surface-variant font-label-sm text-[11px] px-2.5 rounded py-1">Machine Learning</span><span class="bg-surface-variant text-on-surface-variant font-label-sm text-[11px] px-2.5 rounded py-1">Python</span><span class="bg-surface-variant text-on-surface-variant font-label-sm text-[11px] px-2.5 rounded py-1">Data &amp; Insights</span><span class="bg-surface-variant text-on-surface-variant font-label-sm text-[11px] px-2.5 rounded py-1">Big Data</span></div>
+</div>
+</div>
+<!-- Project 7 -->
+<div class="group flex flex-col bg-surface-container-lowest border border-outline-variant/30 rounded-lg p-6 hover:-translate-y-2 hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition-all duration-300 ease-out cursor-pointer" onclick="showScreen('strava')">
+<div class="w-full h-48 rounded overflow-hidden mb-6 relative">
+<img alt="Infrastructure Resilience" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVUj5RLeTBkeB57AGHG8Bb3PvyHUEFtx1X32BGxKEsFF0jhITVQaBDmsW3A3ZPjjIX6ZRL-cAW9Z4_UQ0ffgNwGOvGAxzwwjbL_DcgxqU406OMZeU20aiOrdE9Y1lwgceGIZ0V3sD7Rz0m_dMKgTx03vommDZ_tu3WPGM01mmRCzMoaeS9e8i53XnjTTVlyywxmZtgWF7wvlsV0b1O4ocg-8O4Arhy_kAGHlxYH89IOSO9tYLHAFzkph8WVzWO2I8KOEEd80pwC31S8g">
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2 group-hover:text-primary-container transition-colors">From exchange semester: Strava Case Study</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 mb-6">Business Plan for Strava to adapt to navigate potential market shifts due to AI</p>
+<div class="mt-auto">
+<h4 class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-3">Skills</h4>
+<div class="flex flex-wrap gap-2"><span class="bg-surface-variant text-on-surface-variant font-label-sm text-[11px] px-2.5 rounded py-1">Business Insights</span><span class="bg-surface-variant text-on-surface-variant font-label-sm text-[11px] px-2.5 rounded py-1">AI in Business</span><span class="bg-surface-variant text-on-surface-variant font-label-sm text-[11px] px-2.5 rounded py-1">Business Strategy</span><span class="bg-surface-variant text-on-surface-variant font-label-sm text-[11px] px-2.5 rounded py-1">Internaltional Academia</span></div>
+</div>
+</div></div>
+</main><footer class="bg-surface dark:bg-surface-dim border-t border-outline-variant/30 dark:border-outline/20 w-full py-section-padding mt-auto">
+<div class="max-w-container-max mx-auto px-gutter flex flex-col md:flex-row justify-between items-center gap-unit">
+
+
+</div>
+</footer></div>
+<div id="screen-plan" class="app-screen" style="display:none"><div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter pt-8"><a onclick="showScreen('front'); return false;" href="#" class="inline-flex items-center gap-2 text-secondary hover:text-primary transition-colors font-headline-md text-headline-md tracking-tight cursor-pointer"><span class="material-symbols-outlined">arrow_back</span>Back to Projects</a></div><main class="pt-20 md:pt-24">
+<!-- Block 1: Hero Section -->
+<header class="w-full py-8 md:py-12 flex flex-col items-center justify-center text-center px-margin-mobile md:px-gutter fade-in-up stagger-1 min-h-[40vh] pt-12">
+<div class="max-w-4xl mx-auto">
+<img alt="Butterfly Mask Logo" class="mx-auto mb-4 w-[250px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCz8ko03f-IAjPqCjcBrhRrFHveNUOSQrIkX9ZOwmfmfB_VfzcuaYBtDpw70njLQ_97Xlg0QvDGG3aMo4SkJgKHM5FeS1JgS74njattbKYQe2KWkbF0XZr5Pv-Ze9Zf57pEBYm0ASE6P5SUf2SmBgktflHdNuC_a6zcX-0AbBhnAtJtsayEwxsxDeiFp51EXkY91VCx0kDo7Ih-RI-l-Jk28pTmwKoDSgZsWyjTxHD81fLFk0y8x0mHzRJYcY2sahYfdQ" style="width: 250px; margin-bottom: 1rem;"/><h1 class="font-display text-[40px] md:text-[64px] leading-[1.1] tracking-tighter text-primary mb-4">
+                Scaling E-Commerce &amp; Live Event Operations
+            </h1>
+<p class="font-body-lg text-[18px] md:text-[24px] leading-relaxed text-on-surface-variant max-w-3xl mx-auto">
+                Transforming an under-optimized merchandise unit into a high-functioning digital and physical storefront, driving a 60% increase in total revenue.
+            </p>
+</div>
+</header>
+<!-- Block 2: The Baseline Challenge -->
+<section class="w-full py-8 md:py-12 bg-surface-container-low border-y border-outline-variant/30 fade-in-up stagger-2">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+<div>
+<h2 class="font-display text-[32px] md:text-[48px] leading-[1.1] tracking-tighter text-primary">
+                        Overhauling the Infrastructure
+                    </h2>
+</div>
+<div class="flex flex-col gap-4">
+<p class="font-body-lg text-[18px] md:text-[20px] leading-relaxed text-on-surface">
+                        The merchandise operation was previously neglected, suffering from an abandoned web store, chronic under-stocking, and fulfillment delays. 
+                    </p>
+<p class="font-body-lg text-[18px] md:text-[20px] leading-relaxed text-on-surface"></p><ul data-path-to-node="1"><li class=""><p class="font-body-lg text-[18px] md:text-[20px] leading-relaxed text-on-surface" data-path-to-node="1,1,0">The immediate mandate was to build a functioning infrastructure from scratch: launch and staff a dedicated MercadoShops platform, establish reliable fulfillment pipelines, and take over end-to-end procurement and inventory control to capture missed revenue.</p></li></ul><p class="" data-path-to-node="2"></p><p></p>
+</div>
+</div>
+</div>
+</section>
+<!-- Block 3: Commercial Strategy & Analytics -->
+<section class="w-full py-8 md:py-12 bg-surface fade-in-up stagger-3">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter text-center">
+<h2 class="font-display text-[32px] md:text-[48px] leading-[1.1] tracking-tighter text-primary mb-4">
+                Data-Driven Product Strategy
+            </h2>
+<p class="font-body-lg text-[18px] md:text-[20px] leading-relaxed text-on-surface-variant max-w-2xl mx-auto mb-8">
+                Shifting from intuitive buying to analytical forecasting. By analyzing historical sales velocity and audience demographics, we optimized the product mix to maximize both margin and sell-through rates.
+            </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+<div class="bg-surface-container border border-outline-variant/50 p-6 md:p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow"><img alt="The embroidered corduroy hat and branded socks represent the high-margin hero products used to optimize cash flow." class="w-full h-[200px] md:h-[250px] object-cover rounded-xl mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn_W8VMjUM0RWBPVdrW5UCxCOhfWOEXDhxw6hv2jvtKXZI4OwVhiaPcS442jmGHLnfIuIBcJXM388Oj6OHciS9ymC0I9V8bjFj_QGIo52Y2sZ2SXFr56I0itNeYhxxAJdnUbHTQ7tMDJ7R2tasehXCqgCgDXLEgpTsr4Kg2dqUGKnbi1XEbwtQjnegQlFSV1AfKj7G6LLKEyywS3Jd6h7XKDzGNsCvU7ZyK2uBlvVBH6OVQABaX4OpvFbZ-WBYRw7x3w" style="border-radius: 8px; object-position: center top;"/>
+<h3 class="font-display text-[28px] md:text-[36px] leading-[1.1] tracking-tighter text-primary mb-2">Margin Optimization</h3>
+<p class="font-body-lg text-[16px] md:text-[18px] leading-relaxed text-on-surface-variant">
+                            Renegotiated vendor contracts and optimized supply chains to improve gross margins on high-velocity items without compromising quality or perceived value.
+                        </p>
+</div>
+<div class="bg-surface-container border border-outline-variant/50 p-6 md:p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow"><img alt="The heavy-print hoodie represents the high-cost inventory priced for rapid capital turnover." class="w-full h-[200px] md:h-[250px] object-cover rounded-xl mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGtwvCN_i7Kx_SPk3VRnqDhQLJn6owt8bkbTaIKrTs08togAmXYcYp9tm91AwLaAYEjkJplqCFZRKd3biLX-UINyu2CyzfAvnIFYYwce33i2WAmq_CJ6_ZdzE2B4FFW-OZbY7DjMPwWcZ6WVUtWl_z3xvcZVPA9NaGWSR-l7rYPEwTE8BLgoFPXuaT2-N2TB7y159fV8iOX4u81CtM-J2lc0rXHqzlbKFUT0hR57RR2hS4Ji3kfHfpY3C93oY2UvKWZQ" style="border-radius: 8px; object-position: center center;"/>
+<h3 class="font-display text-[28px] md:text-[36px] leading-[1.1] tracking-tighter text-primary mb-2">Capital Turnover</h3>
+<p class="font-body-lg text-[16px] md:text-[18px] leading-relaxed text-on-surface-variant">
+                            Implemented just-in-time inventory strategies and strategic price scaling to accelerate capital turnover, reducing end-of-season dead stock.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Block 4: Live Operations at Scale -->
+<section class="w-full py-8 md:py-12 bg-surface-container-low border-y border-outline-variant/30 fade-in-up">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter text-center">
+<h2 class="font-display text-[32px] md:text-[48px] leading-[1.1] tracking-tighter text-primary mb-4">
+                Executing the 15,000-Attendee Live Environment
+            </h2>
+<p class="font-body-lg text-[18px] md:text-[20px] leading-relaxed text-on-surface-variant max-w-3xl mx-auto mb-8">
+                Managing physical sales for crowds of up to 15,000 attendees required navigating strict fiscal regulations and securely moving thousands of units without a dedicated warehouse or transport.
+            </p>
+<div class="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-4 relative">
+<!-- Line connecting nodes on desktop -->
+<div class="hidden md:block absolute top-1/2 left-[10%] right-[10%] h-1 bg-outline-variant/50 -z-10"></div>
+<div class="bg-surface border border-outline-variant/50 rounded-xl p-6 w-full md:w-1/3 text-center shadow-sm relative">
+<div class="w-10 h-10 md:w-12 md:h-12 bg-primary text-on-primary rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4 font-bold text-lg md:text-xl">1</div>
+<h3 class="font-display text-[24px] md:text-[28px] leading-[1.1] tracking-tighter text-primary mb-2">Demand Forecasting</h3>
+<p class="font-body-lg text-[16px] md:text-[18px] leading-relaxed text-on-surface-variant">Extrapolating historical venue data while adjusting for diminishing returns at scale.</p>
+</div>
+<div class="bg-surface border border-outline-variant/50 rounded-xl p-6 w-full md:w-1/3 text-center shadow-sm relative">
+<div class="w-10 h-10 md:w-12 md:h-12 bg-primary text-on-primary rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4 font-bold text-lg md:text-xl">2</div>
+<h3 class="font-display text-[24px] md:text-[28px] leading-[1.1] tracking-tighter text-primary mb-2">Event Logistics</h3>
+<p class="font-body-lg text-[16px] md:text-[18px] leading-relaxed text-on-surface-variant"> Securing inventory transport and managing regional labor and tax compliance.</p>
+</div>
+<div class="bg-surface border border-outline-variant/50 rounded-xl p-6 w-full md:w-1/3 text-center shadow-sm relative">
+<div class="w-10 h-10 md:w-12 md:h-12 bg-primary text-on-primary rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4 font-bold text-lg md:text-xl">3</div>
+<h3 class="font-display text-[24px] md:text-[28px] leading-[1.1] tracking-tighter text-primary mb-2">Point-of-Sale Execution</h3>
+<p class="font-body-lg text-[16px] md:text-[18px] leading-relaxed text-on-surface-variant">Coordinating up to 11 staff members across 5 concurrent booths to ensure constant inventory oversight.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Block 5: The Core Competency (Dark Theme Block) -->
+<section class="w-full text-on-primary py-8 md:py-12 fade-in-up" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBAF0KIlMXfSGCjj394n8wzZM6qhskWzgK0esOhagm6ez4UpzyoyWPRLPjDLOcL9qrqM5SwXM8ke3q5J_4-bRITYq7G0SAMlShWQE4niqS6mKUqBITF4Q40-GBUbKZ1O9vyz8OhMJ2oZldAygCApPqYzVmwcoNNeVUoGLYNr7v41F99p98uCW_aqYNKZBC9ueRWTtPcb_OiLkg7z5hFmwibdHPtUPAQDJ0CkVP5-wRrVEH-bj2PpEFr1Obgk_WhoTbO0w"); background-size: cover; background-position: center center; position: relative;'>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter flex flex-col items-center justify-center text-center min-h-[30vh]"><div class="absolute inset-0 bg-black/60 z-0"></div><div class="relative z-10 flex flex-col items-center justify-center text-center"><h2 class="font-display text-[32px] md:text-[48px] leading-[1.1] tracking-tighter mb-4">Autonomy &amp; Rapid Adaptation</h2><p class="font-body-lg text-[18px] md:text-[20px] leading-relaxed text-primary-fixed-dim max-w-4xl mx-auto">Driving a 60% increase in total revenue required learning and executing across entirely new disciplines, ranging from digital fulfillment to tax law, in a matter of months. It demanded total ownership of an underdeveloped business unit, the ability to solve complex logistical bottlenecks on the fly, and the discipline to build a profitable, high-volume operation from the ground up.</p></div></div>
+</section>
+</main><footer class="w-full py-8 md:py-12 border-t border-outline-variant dark:border-outline bg-background dark:bg-surface-container-low">
+</footer></div>
+<div id="screen-polymkt" class="app-screen" style="display:none"><div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter pt-8"><a onclick="showScreen('front'); return false;" href="#" class="inline-flex items-center gap-2 text-secondary hover:text-primary transition-colors font-headline-md text-headline-md tracking-tight cursor-pointer"><span class="material-symbols-outlined">arrow_back</span>Back to Projects</a></div><main>
+<!-- 1. Hero Block -->
+<section class="py-section-padding px-margin-mobile md:px-section-padding max-w-container-max mx-auto py-12">
+<div class="flex justify-center mb-12"><img alt="Polymarket Logo" class="w-full max-w-[240px] object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDs1LQU5JyywCmC6HCoe6_Ei1s9IOb7rekbGqXPJCatg8CpfKYnIBOFcNlsd3R1d7_AfMohR2nOSKdD4spasj8Wgdiw15zOs458kJsHWhN6E6wcM8oFOmMlQPGoL16zgCDLt6duq_V4_lhvsDf3UHOmI7wEcOSwtoh7Itzm4u98hwYjVpI6DOgquAUMG887ZbjwIiMcTgUVlOxSJyToe5-5DI-XMU_V47ucGTHK87dr_lPoqExHDVFaeqAG-gEj6ZvHqg"></div>
+<div class="flex flex-col text-left"><div class="max-w-[900px] flex flex-col items-center mx-auto">
+<h1 class="font-display text-primary font-bold tracking-tight mb-8 text-center" style="font-size: 4rem; line-height: 1.1;">Deconstructing the Wisdom of Crowds</h1>
+<p class="font-headline-md text-secondary font-bold mb-8 text-center" style="font-size: 1.5rem; line-height: 1.4;">Built a 4.7-million-record quantitative pipeline to evaluate behavioral biases and market calibration in decentralized prediction markets.</p>
+<div class="border-l-2 border-primary pl-6 mt-8">
+<p class="font-body-lg text-on-surface-variant" style="font-size: 1.1rem; line-height: 1.6;">While prediction markets often display remarkable accuracy in structured domains like sports, other more opaque markets such as geopolitical conflicts operate under extreme uncertainty and informational asymmetry. This project tests whether financial incentives move crowds to accurately price geopolitical risk, or if behavioral biases and lack of information cause the market to systematically misprice probability when facing global crises.</p>
+</div>
+</div></div>
+</section>
+<!-- 2. Data Architecture Block -->
+<section class="py-section-padding px-margin-mobile md:px-section-padding w-full pb-12">
+<div class="max-w-container-max mx-auto flex flex-col items-center">
+<div class="w-full max-w-[1000px] rounded-lg overflow-hidden shadow-sm" style="box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+<img alt="Polymarket API Interface" class="w-full h-auto rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVPXJ9naK6PIbRWpI73kFY3UUwEsJhGEj2ZducCZwE1iEJZkGIys-5Odkhd2y_ZoWL_yyK0uJNGaaKToyjHJ1BrLfFC2OXhWZ_cMf4c9OMw_wq0gU-HXXoIhaTA30qPw5c8kVZ2UlnTSNyugKPqSieovxmbGjmSk07cvj72knNCy5aUKF_Icp1iD8UJpVAkboy2fi0MVF7sMEbkwJtdFTRpTUZjSIMdnILh7AfC1QARDXfqYrg4ZWcQYgpst-C5lzvPw">
+</div>
+<p class="mt-4 text-center text-label-sm text-on-surface-variant opacity-70">
+      Raw data source: A geopolitical event market interface extracted via the Polymarket API.
+    </p>
+</div>
+</section>
+<!-- Data Engineering Row -->
+<section class="py-12 px-margin-mobile md:px-section-padding border-t border-outline-variant max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-stretch">
+<!-- Left Card -->
+<div class="border border-outline-variant p-8 rounded-lg shadow-sm bg-surface flex flex-col">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-6">Unstructured Data</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-auto">
+                        Processing millions of trades required robust data engineering. Using DuckDB and SQL, the project relies on memory-safe pipelines to query 4.7 million Parquet records efficiently. Because the raw database lacked categorical tags, complex Regex pipelines were built to algorithmically isolate different categories such as geopolitical conflicts, sports, among others.</p>
+</div>
+<!-- Right Card -->
+<div class="border border-outline-variant p-8 rounded-lg shadow-sm bg-surface flex flex-col">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-6">Solving Missing Data with Blockchain Mechanics</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-auto">
+                        The raw dataset had a critical flaw: it lacked exact timestamps for trades. Instead of discarding the data, an 'API-Free Block Interpolation' method was engineered. By anchoring a known timestamp to a Polygon block number and calculating forward using the average 2.24 second block time, the exact time of every trade was reverse-engineered using pure math and SQL.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Pipeline Section -->
+<section class="pb-section-padding px-margin-mobile md:px-section-padding max-w-container-max mx-auto">
+<div class="w-full max-w-[1000px] mx-auto rounded-lg overflow-hidden shadow-sm">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary text-center mb-1.5">The Quantitative Pipeline</h2>
+<img alt="Project ETL Pipeline Diagram" class="w-full h-auto rounded-lg -mt-2 -mt-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCms2fy1ZhRs0poVvE8Vdoge4h3OTMboey_LPUCAyUlz1k-WF4ZuAQeOr6b-b-b4Bsy1L_hJZRHby0UiY55Jm_1c53JAhfBVoa3o05jbvdeLQETJj6M3mGq-YZOQwvQR9o9NHxJb5rZyGf4A8bfYAcyh18yZ5V0x7qr91LUBWI0Kr8qMs2Tb7VkIP2CwgWsAFcYVbUwW7IfVSJs6D9QQHB9ykb2lY-muSqgU1jjc_SJoB3sZW5KC3jX9AFUmhlD-Lxcbg">
+</div>
+</section>
+<!-- 4. Analytical Methodology Block -->
+<section class="py-section-padding px-margin-mobile md:px-section-padding max-w-container-max mx-auto border-t border-outline-variant">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary text-center mb-12">Precision and Data Integrity</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Card 1 -->
+<div class="border border-outline-variant p-8 rounded-lg hover:shadow-[0_4px_12px_rgba(0,0,0,0.05)] transition-shadow duration-300 bg-surface">
+<h3 class="font-headline-md text-headline-md text-primary mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-surface-tint" data-icon="bar_chart">bar_chart</span>
+                        Statistical Rigor
+                    </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Implemented Logistic Recalibration via Maximum Likelihood Estimation to map the implied market probabilities against real-world frequencies, objectively measuring market confidence.
+                    </p>
+</div>
+<!-- Card 2 -->
+<div class="border border-outline-variant p-8 rounded-lg hover:shadow-[0_4px_12px_rgba(0,0,0,0.05)] transition-shadow duration-300 bg-surface">
+<h3 class="font-headline-md text-headline-md text-primary mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-surface-tint" data-icon="filter_alt">filter_alt</span>
+                        Preventing Data Leaks
+                    </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Built a 'Dynamic Market Resolution' filter. Instead of relying on arbitrary administrative end dates, SQL was used to track the exact block where the probability permanently collapsed (above 99% or below 1%). This ensured post-resolution trades did not skew the prediction accuracy measurement.</p>
+</div>
+</div>
+</section>
+<!-- 5. Early Behavioral Insights Block -->
+<section class="py-section-padding px-margin-mobile md:px-section-padding bg-inverse-surface text-inverse-on-surface w-full">
+<div class="max-w-container-max mx-auto text-center">
+<h2 class="font-display text-display text-on-primary mb-8">The Psychology of Uncertainty</h2>
+<p class="font-body-lg text-body-lg text-inverse-on-surface mx-auto mb-12 opacity-90 max-w-[900px]">As geopolitical events near resolution, markets become severely underconfident, artificially compressing probabilities toward 50%. Traders freeze due to extreme informational asymmetry and the "fog of war." Measuring this presents a strict epistemological challenge: raw data cannot natively distinguish a genuine prediction from a leaked decision or a lagging administrative resolution. To isolate true forecasting from late-stage news arbitrage, the trajectory below explicitly filters out post-clarity trades. While this successfully reveals the intense volatility that spikes during genuine uncertainty, it introduces a deliberate analytical trade-off: it inherently understates the market's total predictive efficiency, as pricing in a guaranteed outcome is itself a valid form of prediction. The final dataset will address this constraint.</p>
+<div class="w-full rounded-xl overflow-hidden border border-outline/30 mt-8">
+<img class="w-full max-h-[450px] object-cover object-top" data-alt="A highly detailed data visualization chart showing a calibration slope evolving over time as geopolitical events approach resolution. The aesthetic is clean, professional, and data-driven, utilizing deep blues and stark whites with precise, minimalist lines and grid patterns." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHctKnAVn6NLrf2y97xV8joEHQMjYHqKqnEW-u-jOJWzFdMxXTSmCeKgcvOwUc5l92VAF_ng5jxJXJEz0Vlyv9HY7W6nPVaLfQw3oeXJfX3j5Yf_ydnK7vrUq42jm9LeP0xFdZ_J94Tk2OTCL3E2UFxr7-WddBuA7s3RRVV8DInD3T64scssw3weLQAtUqkObss1hK9-_WRXcoXl26alow3hUG0p6pdnPGGRS87ql3-LSXB0ol8tjsl41HiPcdparO0w">
+</div>
+</div>
+</section>
+</main><footer class="bg-surface dark:bg-surface-dim w-full py-section-padding border-t border-outline-variant dark:border-outline flat no shadows">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-section-padding max-w-container-max mx-auto space-y-6 md:space-y-0">
+
+<div class="flex flex-wrap justify-center gap-gutter font-label-sm text-label-sm uppercase tracking-widest text-secondary dark:text-secondary-fixed">
+
+
+
+
+</div>
+
+</div>
+</footer></div>
+<div id="screen-tdcs" class="app-screen" style="display:none"><div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter pt-8"><a onclick="showScreen('front'); return false;" href="#" class="inline-flex items-center gap-2 text-secondary hover:text-primary transition-colors font-headline-md text-headline-md tracking-tight cursor-pointer"><span class="material-symbols-outlined">arrow_back</span>Back to Projects</a></div><main class="pt-24">
+<!-- Section 1: Hero Block -->
+<section class="py-16 px-margin-mobile md:px-gutter max-w-container-max mx-auto flex flex-col items-center justify-center text-center pt-24">
+<h1 class="font-display text-[40px] md:text-[64px] leading-[1.1] tracking-tighter text-primary max-w-4xl mb-6">
+                Reviewing Brain Stimulation for Parkinson's Disease
+            </h1>
+<p class="font-body-lg text-[18px] md:text-[24px] leading-relaxed text-secondary max-w-2xl">
+                A data-driven audit of how electrical therapy and biological timing affect movement.
+            </p>
+</section>
+<!-- Section 2: The Premise -->
+<section class="py-16 px-margin-mobile md:px-gutter bg-surface-container-low border-y border-outline-variant/30">
+<div class="max-w-container-max mx-auto grid md:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="font-display text-[32px] md:text-[48px] leading-[1.1] tracking-tighter text-primary mb-6">The Baseline Claim</h2>
+<p class="font-body-lg text-[18px] md:text-[20px] leading-relaxed text-on-surface-variant mb-4">
+                        A recent study (Agarwal et al., 2018) tested if mild electrical brain stimulation could improve motor function in Parkinson's patients. The original researchers claimed it was a major, statistically significant success across multiple measures.
+                    </p>
+</div>
+<div class="relative h-64 md:h-96 w-full flex items-center justify-center"><div class="relative w-full h-full overflow-hidden rounded-lg shadow-sm border border-outline-variant/30"><img alt="Researcher working with a Parkinson's patient on a laptop" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJGbCViwMjL3SOqa7TPeunHuYPBzzAg-Oz-D33sNm1KUBj3dzgbdNaqMw348m-awNPZs1m3DTrZNoqxS1ve7Ge1Dx2eJ9P0JJAtWJukrrsrnG_7Co4Bog3_uXnw-EyEhanD62MU-rlDBJl0F0dPXJa-G4txLMPibGrBZ9mLzZpZMauoRnuX4y1KWDhapVvq8ivF8bfJW6QNtJxQmPDe6wT7cNr2gWLNJaYBUhMuY_XluMM6R102mpsts8Sw3ApQRtxwg"/></div></div>
+</div>
+</section>
+<!-- Section 3: The Data Audit -->
+<section class="py-16 px-margin-mobile md:px-gutter max-w-container-max mx-auto text-center">
+<h2 class="font-display text-[32px] md:text-[48px] leading-[1.1] tracking-tighter text-primary mb-8">Uncovering Flawed Data</h2>
+<div class="max-w-3xl mx-auto p-8 border border-outline-variant/30 bg-surface rounded-lg shadow-sm">
+<p class="font-body-lg text-[18px] md:text-[24px] leading-relaxed text-on-surface-variant">
+                    By reconstructing the study's math, we found a <b>critical error</b>: the authors quietly excluded a patient who did not respond well to the treatment without declaring it in their methodology. Once that missing data point was correctly restored to the analysis, the alleged 'major success' was no longer statistically significant for the primary outcome measure.
+                </p>
+</div>
+</section>
+<!-- Section 4: The True Findings -->
+<section class="py-16 px-margin-mobile md:px-gutter bg-surface-container-low border-y border-outline-variant/30">
+<div class="max-w-container-max mx-auto">
+<h2 class="font-display text-[32px] md:text-[48px] leading-[1.1] tracking-tighter text-primary text-center mb-16">The True Findings</h2><p class="font-body-lg text-[18px] md:text-[20px] leading-relaxed text-on-surface-variant max-w-3xl mx-auto text-center mb-8">To determine the true clinical efficacy of the intervention, we conducted a strict pre-post statistical replication across both global and fine motor dexterity tests. By re-incorporating the excluded patient data, a much more nuanced picture of neuroplasticity emerged.</p>
+<div class="flex flex-col gap-12">
+<div class="flex flex-col gap-6 w-full max-w-[900px] mx-auto">
+<div class="border border-outline-variant/30 bg-white p-4 rounded-lg shadow-sm">
+<img class="w-full h-auto object-cover rounded border border-outline-variant/20" data-alt="A clean, minimalist data visualization chart showing significant improvement in fine motor skills for the non-dominant hand after brain stimulation, set against a pristine white background in a high-contrast editorial style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBk-aZ1stxbbJjUKln-Sg3ORHzkuvdPrnYIH0xwqaAAWnkxd5CVjCU8CJoxrHejQak2l5sUkweYnmHo75QH_J-lViO8a30HKJqtR2Ashsm_Ac0a_RfpFbgXlL8UbOT_mfwjUazTTJdPGQvl6vBv812XDAHbPLDJza-Jb25tH1BiVhJ4noFNrecBl7_8p6VTHXE7QRqG5npFw9jtLhg1X66x5CCkn1uMBfqclx3dXj8zaK_z0I3EcXQ_9Mzc6y5cdVR0RA"/>
+</div>
+<p class="font-body-lg text-[18px] md:text-[20px] leading-relaxed text-on-surface-variant pl-4 border-l-2 border-primary/30">
+                            The data suggests tDCS benefitted specific fine-motor skills (like using the non-dominant hand), even when the broader motor function claims fell short.
+                        </p>
+</div>
+<div class="flex flex-col gap-6 w-full max-w-[900px] mx-auto">
+<h3 class="font-display text-[28px] md:text-[36px] leading-[1.1] tracking-tighter text-primary mb-4">Further Analysis: The Circadian Variable</h3><p class="font-body-lg text-[18px] md:text-[20px] leading-relaxed text-on-surface-variant max-w-3xl mb-8">A deep dive into the temporal data revealed that treatment efficacy is heavily influenced by the time of day it is administered. Stratifying the patient outcomes by session time exposed a clear chronobiological pattern in neuroplasticity.</p><div class="border border-outline-variant/30 bg-white p-4 rounded-lg shadow-sm">
+<img class="w-full h-auto object-cover rounded border border-outline-variant/20" data-alt="A clean, minimalist scatter plot chart demonstrating a strong correlation between afternoon therapy sessions and improved patient outcomes, featuring stark dark blue data points on a light gray grid." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4wsA5QLzYSUPQm7n3SJ5S9ebvYk-Ewk3i78LxwkqoZ4N_HiTNEZd4kIg7QOa1bcHRjeV6wYoDH63ddKd8Hn8LDHYCgU7EMBkz-8QSDObMVj3BL_cWtfXQIjGDDx8GFKDSLdu_tm4AlnoJ2ycoqOX3MwQGe0mNT1J-1aji8y5ofMb5JlDL1zpgUi8-EwG5yu6wFF78Q5_sEbmyyRoMRsuNP0UoVxzjTxnWQuEUL_MXGos58LL0QiIQe4YwfMWlnBElXg"/>
+</div>
+<p class="font-body-lg text-[18px] md:text-[20px] leading-relaxed text-on-surface-variant pl-4 border-l-2 border-primary/30">The biological clock matters: patients who completed their sessions later in the afternoon saw significantly better results compared to morning sessions. Patients completing sessions later in the afternoon showed a strong positive correlation with global motor improvement (r = 0.67, p = 0.034).</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: The Climax -->
+<section class="py-16 px-margin-mobile md:px-gutter bg-inverse-surface text-inverse-on-surface">
+<div class="max-w-container-max mx-auto grid md:grid-cols-2 gap-16 items-center">
+<div class="border-l border-outline-variant/20 pl-8 py-4">
+<h2 class="font-display text-[28px] md:text-[36px] leading-[1.1] tracking-tighter text-white mb-6">The Core Insight: The role of Time</h2>
+<p class="font-body-lg text-[18px] md:text-[22px] leading-relaxed text-outline-variant">
+                        While the original study exaggerated the certainty of its overall success, the underlying data revealed something arguably more important: the brain's internal clock changes how well the treatment worked.
+                    </p>
+</div>
+<div class="flex flex-col items-start md:items-end text-left md:text-right">
+<h3 class="font-display text-[72px] md:text-[96px] leading-none tracking-tighter font-bold text-white mb-4">Time of Day</h3>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed-dim bg-secondary-fixed/10 px-4 py-2 rounded">
+                        A potential mediator for therapeutic success</span>
+</div>
+</div>
+</section>
+</main><footer class="w-full bg-surface dark:bg-surface-dim border-t border-outline-variant/50">
+<div class="max-w-container-max mx-auto px-gutter py-section-padding flex flex-col md:flex-row justify-between items-start gap-8">
+<div>
+<p class="font-body-lg text-[16px] md:text-[18px] leading-relaxed text-on-surface dark:text-on-surface-variant mb-4 w-full">Agarwal, S., Pawlak, N., Cucca, A., Sharma, K., Dobbs, B., Shaw, M., Charvet, L., &amp; 
+Biagioni, M. (2018). Remotely-supervised transcranial direct current stimulation paired with 
+cognitive training in Parkinson’s disease: An open-label study. Journal of Clinical 
+Neuroscience. https://doi.org/10.1016/j.jocn.2018.08.037</p>
+<div class="font-label-sm text-label-sm text-secondary">
+                    © 2024 Parkinson's Research Initiative. All citations follow AMA guidelines.
+                </div>
+</div>
+<nav class="flex flex-wrap gap-6">
+</nav>
+</div>
+</footer></div>
+<div id="screen-peya" class="app-screen" style="display:none"><div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter pt-8"><a onclick="showScreen('front'); return false;" href="#" class="inline-flex items-center gap-2 text-secondary hover:text-primary transition-colors font-headline-md text-headline-md tracking-tight cursor-pointer"><span class="material-symbols-outlined">arrow_back</span>Back to Projects</a></div><main class="flex-grow pb-12 px-gutter md:px-0 pt-24"><div class="max-w-container-max mx-auto pt-8">
+<!-- Contextual Navigation (Back Button) -->
+<!-- Presentation Blocks -->
+<div class="flex flex-col gap-16">
+<!-- Section 1 (Hero) -->
+<section class="flex flex-col justify-center items-center text-center pb-4 pt-8"><div class="flex mb-4 justify-start">
+<img alt="PedidosYa Logo" class="w-32 md:w-[150px] object-contain opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtVeQQnPHmLU_5-AjRwQ0WZAIH8tc1_Y217Wv7fxN08skp3YHa_hbWHIvKtcGki-73zqu4EzlAJaAQvGMd_H8Iu0qytEkrrXnrjW4jo_axVHFC1W-oYJUZnhM2FjA7qgO5_pKHUBXe1lx9rtJ_9uoMwgj34CWjbbwnhbpuoyajmfBkbpcWZPjIo67NG4FSxR8fQQlOJiZWi7xRGJJUPr5NhT56Vv7_yQgxSW5shr3tRMa1hVjdDBv1ZSHzrH0oYw0jZw">
+</div>
+<h1 class="font-display text-[40px] md:text-[64px] leading-[1.1] text-primary mb-4 max-w-4xl tracking-tighter">
+            Redesigning Digital Choice Architecture for Healthier Food Decisions</h1>
+<p class="font-display font-medium text-[20px] md:text-[24px] text-secondary max-w-2xl">
+            A Behavioral Economics approach to delivery app interfaces.
+        </p>
+</section>
+<!-- Sections 2 & 3 Combined -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start border-t border-outline-variant/30 pt-8">
+<!-- Problem -->
+<div class="flex flex-col">
+<h2 class="font-display text-[32px] md:text-[48px] leading-[1.1] text-primary mb-6 tracking-tighter">
+            The Convenience of unhealthy choices</h2>
+<p class="font-body-lg text-secondary text-[18px] md:text-[20px] leading-relaxed mb-8">
+            Algorithmic salience and high-calorie default settings amplify automatic, hypercaloric food choices. Immediate gratification overtakes long-term nutritional goals.
+        </p>
+<img alt="Pizza slices on a table" class="w-full h-auto rounded-[32px] opacity-70 max-w-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhi4GkZk9FCb8Q_tQza-Rl2a7fpV7svPc-sfsHBce7-P6zlhOYa8kE3qd8vhk4apEGE3jWBcvhBAevrxuUPk7Va1OjU2Fr52I8Gzn6rdyWT1RTLhtZTofZsdF9lsEkqIQE15LdAfZcXkw3-UhhUN2Fk2MvhA-f3iL0X1y5dJr7KD-40WQOjHKoCl5z1WDBZ7cmmXe-QV-EPPs9Z-PbPll6RTmzbQ20w0rpOgyZ-IaLc68UxzwAWUn2nvRGHWs_rhpddQ">
+</div>
+<!-- Methodology -->
+<div class="flex flex-col">
+<h2 class="font-display text-[32px] md:text-[48px] leading-[1.1] text-primary mb-6 tracking-tighter">
+            Identifying the Frictions.
+        </h2>
+<div class="w-full bg-surface-container-low p-8 md:p-12 rounded-2xl">
+<p class="font-body-lg text-[18px] md:text-[24px] text-secondary leading-relaxed">Through 65 surveys and 12 in-depth interviews, we mapped the cognitive fatigue users experience within digital food ecosystems. Our research indicates that time scarcity drives users to rely on automatic, low-effort decision-making, bypassing active nutritional deliberation.</p>
+</div>
+</div>
+</section>
+<!-- Sections 4 & 5 Combined -->
+<section class="grid grid-cols-1 gap-12 items-stretch border-t border-outline-variant/30 pt-16">
+<!-- Intervention -->
+<div class="flex flex-col items-center text-center mb-16">
+<h2 class="font-display text-[32px] md:text-[48px] leading-[1.1] text-primary mb-8 tracking-tighter">
+        Nudging Better Choices.
+    </h2>
+<p class="font-body-lg text-secondary text-[18px] md:text-[20px] leading-relaxed mb-12 max-w-4xl">
+        By restructuring the digital choice architecture, we leveraged behavioral nudges, specifically defaults and salience, to guide users toward healthier options without restricting their freedom of choice. This involved a systematic redesign of the menu hierarchy and selection flow to minimize cognitive friction for selecting healthier meals.
+    </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 w-full" style="max-width: 1400px; margin: 0px auto;">
+<div class="flex flex-col items-center">
+<img alt="Salience: Reordering the menu" class="w-auto object-contain mb-4 rounded-xl shadow-md border border-outline-variant/30 bg-white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoW38uB9HmjVPTrlyLP9OSu43hV_jT7PR04EqtjfixYTn60C2Mjp1QgA-pw2Ggcl4jhvRSsc5-v5VjRs26-OrhNZnz5dsEulDQiIg46H-_TaDXyt0VoG3TywQ6yAshn7XIw9cjXoHrsLNXpACU80sOod1Q2S0Z3_C1atgHUsVKqoOLymupMTK--sw67NFzQDVkp3P7Tt0LOIvdmx1XZnDybWiZdTrzPpYQB4SZ97naxnkG1g-DO5AoCpsV2-seVIZh0g" style="width: 100%; height: auto; max-height: none;">
+<p class="font-body-md text-[32px] text-secondary"><span class="" data-index-in-node="0" data-path-to-node="3,0,0">Salience</span><b data-index-in-node="0" data-path-to-node="3,0,0">:</b> Reordering the menu to ensure target options are the most visually immediate, leveraging attention to guide behavior</p>
+</div>
+<div class="flex flex-col items-center">
+<img alt="Experimental: Lower-calorie options placed at the top (Salience) and nutritious sides pre-selected (Healthy Defaults)." class="w-auto object-contain mb-4 rounded-xl shadow-md border border-outline-variant/30 bg-white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIcamHP6wqsW20dnMqEW6ZSPaHWy-1mXr0k4co1st0e9Ier-yki2rDhWnCsKYqjKseL4Hu3N6R43qRuv1idNKgoBe3FeJiqkfZK17pOLGm9ScZ0Y_ovZUQLvcbGyJFxw4byyfYstZfu9qSzbB4x_V4SZ4jjKeruZtwO7kWOLO1A1hw1omHYVlIUF5dTTjaOtCXRSBz6A3DhCyVy0WM6owG3N1OlRBXDd3C_WpKDKpklGQZEErkt6a3T-xzCcVfoENaqQ" style="width: 100%; height: auto; max-height: none;">
+<p class="font-body-md text-[32px] text-secondary"><span class="" data-index-in-node="0" data-path-to-node="5,1,0">Defaults:</span> Leveraging user inertia by pre-configuring the healthier outcome</p>
+</div>
+</div>
+</div>
+<!-- Results (Climax) -->
+<div class="bg-primary dark:bg-surface-dim text-on-primary flex flex-col md:grid md:grid-cols-2 justify-between items-center py-16 px-12 md:px-20 rounded-[40px] w-full mb-8 gap-12">
+<div class="flex flex-col text-left">
+<h2 class="font-display text-[28px] md:text-[36px] text-primary-fixed mb-4 tracking-tighter">
+            A/B Testing Results: The Impact of Nudges
+        </h2>
+<p class="font-body-lg text-[18px] md:text-[22px] text-primary-fixed-dim max-w-lg leading-relaxed">
+            By simply reordering the menu and setting healthy defaults, the proportion of users choosing nutritionally balanced meals more than doubled. This proves modifying choice architecture is a scalable, low-cost alternative to traditional informational campaigns.
+        </p>
+</div>
+<div class="flex flex-col md:flex-row items-center justify-center gap-8 w-full">
+<div class="flex flex-col items-center text-center">
+<div class="font-display text-[72px] md:text-[96px] leading-none tracking-tighter font-bold text-on-primary">26%</div>
+<p class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed-dim mt-2">Control Group (Standard App)</p>
+</div>
+<div class="flex items-center justify-center">
+<span class="material-symbols-outlined text-[48px] text-primary-fixed-dim rotate-90 md:rotate-0">arrow_forward</span>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="font-display text-[72px] md:text-[96px] leading-none tracking-tighter font-bold text-on-primary">65%</div>
+<p class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed-dim mt-2">Experimental Group (Nudged)</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div></main><footer class="w-full py-12 bg-surface dark:bg-surface-dim border-t border-outline-variant/30 dark:border-outline/20">
+<div class="max-w-container-max mx-auto px-gutter flex flex-col md:flex-row justify-between items-center gap-6">
+
+<div class="flex gap-6">
+
+</div>
+</div>
+</footer></div>
+<div id="screen-absentee" class="app-screen" style="display:none"><div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter pt-8"><a onclick="showScreen('front'); return false;" href="#" class="inline-flex items-center gap-2 text-secondary hover:text-primary transition-colors font-headline-md text-headline-md tracking-tight cursor-pointer"><span class="material-symbols-outlined">arrow_back</span>Back to Projects</a></div><main class="flex-grow">
+<!-- Section 1: Hero Block -->
+<section class="min-h-screen flex items-center justify-center px-margin-mobile md:px-gutter max-w-container-max mx-auto h-auto py-8"><div class="max-w-[900px] w-full py-4"><h1 class="font-display text-display text-primary text-[4rem] mb-8">Predicting School Absenteeism.</h1><p class="text-[1.5rem] font-bold text-on-background leading-tight mb-8">Using a 546,000-record national database to map educational vulnerability and testing what happens when standard machine learning meets imbalanced, real-world data.</p><p class="text-[1.1rem] text-secondary border-l-4 border-primary pl-6 py-1">With one in four students missing school regularly, this project aimed to determine if standard machine learning models could reliably flag at-risk youth for targeted educational interventions. By auditing the national Aprender 2023 dataset, the goal was to map the structural causes of absenteeism and test whether certain predictive algorithms can actually identify highly vulnerable populations or if they simply collapse under the weight of skewed social data.</p></div></section>
+<!-- Section 2: The Human Element -->
+<section class="px-margin-mobile md:px-gutter max-w-container-max mx-auto py-section-padding">
+<div class="mb-12">
+<h2 class="font-headline-lg text-headline-lg text-primary md:font-headline-lg md:text-headline-lg mb-4">The Socioeconomic Reality.</h2>
+<p class="font-body-lg text-body-lg text-secondary max-w-3xl">Before building predictive models, exploring the data revealed that school absenteeism is not distributed randomly, and shows clear structural patterns in it's distribution. </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="space-y-4 border border-outline-variant p-8 rounded-lg bg-surface-container-lowest scale-110"><div class="flex flex-col h-full justify-center space-y-6"><img alt="Geographical distribution map" class="w-full h-auto object-contain rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaww-XEgC6AhB8UC_cnOA7vpBaTrux6grHFDeGlcr33_7D7bPP626ofTz2rf0HCf6tcXcaaDcBixcTidt1sfRVlZoDKwnYNK_WdNXcilJMQcuTQO-XU_oDM_IOcAKzd_Ss9M8vEzz4fFZdyvwxqY6bibxjeJjr3PW3SKQ-7KsDuFeTIJ3i4FbfjstdBa1k98TEVuKXlJ0Ct2aB6xAnHYyb0-G01bCkT6-K04pfhXlUA0O48OzOISp1GGrjHvSnvF0PXw"/><p class="font-body-md text-body-md text-on-surface-variant text-center">The geographical distribution of high absenteeism rates shows a clear regional pattern, with the highest concentrations in the south and in Buenos Aires.</p></div></div>
+<div class="space-y-4 border border-outline-variant p-8 rounded-lg bg-surface-container-lowest scale-110"><div class="flex flex-col space-y-8"><div class="space-y-4"><img alt="Socioeconomic absenteeism chart" class="w-full h-auto object-cover rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIlhzKjNHQoFZIgmwIWardYsnQQDyiyDo0J7t4hSjyP8cBjg6ixIJrXUorOzEzJHYxTQUoYBRQ4Uk4FZpWK8JN4wotQti0qMzyVjf7ttFWZ9vv1buJoO5BXXCOntMi4futH01c-8rthslysxVtPu1gKAFLtDH1wdFfC8RNVok0_tyLelFVR4kY26Yfdawu3Q6IenGDGQ85q13Ua8HdRcADHN4_JQQ38LjetQIZXqA8MFozYPTI96mj_NTQLRe2WixdAA"/><p class="font-body-md text-body-md text-on-surface-variant text-center">A detailed breakdown reveals a consistent gradient: students from lower socioeconomic backgrounds are significantly more likely to accumulate high numbers of absences compared to their high-income peers.</p></div><div class="space-y-4"><img alt="Language performance chart" class="w-full h-auto object-cover rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6guTpQFeCVwsztBtOCroYvYVV032wAPBmlOO0t60cvKHO_QLysLM_2L0KqTWs_p7O-YZvnCP_YK9IjoJVrkv-KHT9_ZtnClA6qD760qjIeP-dyHQPRyiqlQBLOkXDxowz7_T7FSjtReo6Sp_1DuyU65AqVPad4Z2n9DMGnjIeEBBgthrBYApOq7H4xi-dQlw_Vs9RD9ptw8dkwZbdIqHoyByu1RcsVMYbceLSog-pYsuSRkSE-wyrbB4P42iPSZeayA"/><p class="font-body-md text-body-md text-on-surface-variant text-center">Distribution of Language performance levels according to socioeconomic level show a higher prevalence of low scores in the low SES areas.</p></div></div></div>
+</div>
+</section>
+<!-- Section 3: The Predictive Test -->
+<section class="bg-surface-container-low px-margin-mobile md:px-gutter py-8">
+<div class="max-w-container-max mx-auto text-center space-y-6 max-w-4xl">
+<h2 class="font-headline-lg text-headline-lg text-primary md:font-headline-lg md:text-headline-lg">The Machine Learning Audit.</h2>
+<p class="font-body-lg text-body-lg text-secondary max-w-3xl mx-auto">We wanted to see if we could automate the identification of at-risk students based on their profiles. We ran the dataset through several standard machine learning models, including K-Nearest Neighbors (KNN), Random Forest, and Bagging. We also applied Boosting techniques, but they yielded no improvement. The goal was to see if an algorithm could accurately flag students as having low, medium, or high absentee risk.</p>
+</div>
+</section>
+<!-- Section 4: The Imbalance Trap -->
+<section class="px-margin-mobile md:px-gutter max-w-container-max mx-auto py-8">
+<div class="mb-12 text-center md:text-left">
+<h2 class="font-headline-lg text-headline-lg text-primary md:font-headline-lg md:text-headline-lg mb-4">The Limits of Out-of-the-Box Prediction.</h2>
+<p class="font-body-lg text-body-lg text-secondary max-w-4xl">The models exposed a classic challenge with real-world social data: severe class imbalance. Because 50% of the dataset represented low absenteeism and only 15.8% represented the highly vulnerable minority, the algorithms took the path of least resistance. Even advanced ensemble methods collapsed under the skew, optimizing for overall accuracy rather than minority detection.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="space-y-4 bg-surface-container-lowest p-8 rounded-lg scale-110">
+<div class="font-label-sm text-label-sm font-bold uppercase tracking-widest text-primary mb-2">KNN Confusion Matrix</div><img alt="KNN confusion matrix" class="w-full aspect-square object-contain border border-outline-variant rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1YG7rIXGVVY9hB5P5vEvAvllPNIGZO5QF9Nc1yrSEBdAKC_DY9bpYLQgj4wh8PEZPZxZeDys2EkKM3_w6uZhf1NVaMe-Fwlv0faT-zE0AB0HZCWpPNG6Z-lWjs5HFJZwFrKoZNHNdlpDEjzNxocjCfoIq2KleWF3blRjcCcz2clwOfpGc0t5tTUM4h7yv_RFR7gV1zPzw5_QKSq4XG4fgjyZBTghm-pG_XT8m7TfnFJgQAjwam6vr09OIcSOuktRnDQ"/>
+<p class="font-body-md text-body-md text-on-surface-variant text-center">The KNN model played it safe, guessing the average outcome for almost everyone and missing the extreme cases.</p>
+</div>
+<div class="space-y-4 bg-surface-container-lowest p-8 rounded-lg scale-110">
+<div class="font-label-sm text-label-sm font-bold uppercase tracking-widest text-primary mb-2">Bagging Confusion Matrix</div><img alt="Bagging confusion matrix" class="w-full aspect-square object-contain border border-outline-variant rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXomw3kb6GCpdimrAD3wEf3jMX2ktDhZuwBCu_v6yI6r0FgR8AEEYYmzu4fhlqYgEHsWBSYJdxdny-8Nx3gHCrFuwXcGq3Pao7JKe6-s6R0P-Sxlmm9ZEHDR60cQhy6HDUE4Ep7hgJfgufFblwYMkt31N-YS7Vh8AhtL2Ehk3vz67xi8DLj5z7SQNh0L-5nJktvAjH2YjLrKFnT4eQsuW_8rNYWMc3VknOuHfXlBXvKsUvgmn5gxLt1BaL2-gF2FHOUg"/>
+<p class="font-body-md text-body-md text-on-surface-variant text-center">The Bagging model successfully identified the low-risk majority but failed to spot the highly vulnerable minority.</p>
+</div>
+</div>
+</section>
+<!-- Section 5: The Strategic Takeaway -->
+<section class="bg-primary text-on-primary px-margin-mobile md:px-gutter py-16">
+<div class="max-w-container-max mx-auto text-center space-y-8 max-w-4xl">
+<h2 class="font-display text-display text-on-primary">Engineering for Structural Realities.</h2>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim">This audit proved that identifying vulnerable students requires more than standard predictive modeling. Because extreme absenteeism is a structural issue driven by socioeconomic barriers, accurate prediction requires engineering richer, localized variables and deploying specific data-balancing techniques (like SMOTE) to ensure the algorithm prioritizes the students most at risk.</p>
+</div>
+</section>
+</main><footer class="bg-surface dark:bg-surface-container-low w-full py-section-padding border-t border-outline-variant dark:border-outline">
+</footer></div>
+<div id="screen-strava" class="app-screen" style="display:none"><div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter pt-8"><a onclick="showScreen('front'); return false;" href="#" class="inline-flex items-center gap-2 text-secondary hover:text-primary transition-colors font-headline-md text-headline-md tracking-tight cursor-pointer"><span class="material-symbols-outlined">arrow_back</span>Back to Projects</a></div><main>
+<!-- Section 1: Hero Block -->
+<section class="min-h-[80vh] flex items-center justify-center py-section-padding px-margin-mobile relative overflow-hidden">
+<div class="absolute inset-0 z-0 opacity-10" data-alt="A subtle, high-contrast black and white topographical map or data visualization abstract pattern. The aesthetic is minimal, corporate, and technological, fitting an academic presentation on data platforms. Wide aspect ratio, soft focus." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuANmc6NO5eczgFE4LNkLD8q1QIfGBqmvcxpirJUxjKg98NAP6xx5rq1W39Dc3jn-FNxBwgoNfm6gu7QJwyOyxiIuKifkJ6MP2ARU0Ww5-uc09_wn3rYY3fvxmA8uDHMrvJqztwmh24rgsmO37-IO6sUDF3vI4BdGp2ijiX30qEqVS1qtMsOHw0MC0PmOWqJOMc5a9AHu_YIieCv6dr3MyAFhu5phALwHJuDNyCyE4d-gnMthXjS9nBR')"></div>
+<div class="max-w-container-max mx-auto text-center z-10 relative">
+<div class="flex justify-center mb-8"><img alt="Strava Platform Economics Logo" class="h-[80px] md:h-[100px] w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsg88jJosUEcmK1BiJLV36ABXBzblve6mB4lPljWQLEwAv6-SXsOBbnzwslP5SgBJSB1VesErcCsn9Ord9LRuhOjqezWVTOsCahjxTBxLuNzjGePFLk7hL5aGYtgNmbiAn4vcI13_rVCYG0igtbial5Jz1dU1aB09yJnqD9XLWMefsX2WY2P6avApHdfYfTLISGwR4biqx81KeJRsqPD04A6_JK5uLXHNJ83Dqj-N3_FfbvsB5Qr1-ectE8qHcpCRe6w"/></div><h1 class="font-display text-display md:text-[72px] lg:text-[96px] leading-tight mb-8 text-primary tracking-tighter">Strava: Platform<br class=""/>Economics &amp; Disruption</h1>
+<p class="font-body-lg text-body-lg md:text-[24px] text-on-surface-variant max-w-[800px] mx-auto font-light leading-relaxed">A strategic case study evaluating Strava’s position as a digital health orchestrator, its network moats, and the hybrid innovation model required to survive the rapid integration of AI analytics.</p>
+</div>
+</section>
+<!-- Section 2: The Discontinuity -->
+<section class="py-[6rem] px-margin-mobile border-t border-outline-variant">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-16 items-start">
+<div class="lg:col-span-5">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-6 lg:mb-0 lg:sticky lg:top-[120px]">
+                            The Disruption Threat.
+                        </h2>
+</div>
+<div class="lg:col-span-7">
+<p class="font-body-lg text-body-lg text-on-surface mb-8 leading-relaxed">
+                            Strava won the fitness market by acting as a hardware-agnostic orchestrator, capturing the high-margin social layer while hardware complementors absorbed R&amp;D costs. However, the rapid convergence of wellness data and predictive AI analytics represents a "technological discontinuity". 
+                        </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                            The ecosystem is entering a volatile era of ferment. Without aggressive integration of advanced AI, Strava risks losing its market dominance to faster-moving competitors offering superior, prescriptive health insights.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Platform Economics & Moats -->
+<section class="py-[6rem] px-margin-mobile bg-surface-container-low">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">
+                        Analyzing the Network Architecture.
+                    </h2>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse min-w-[800px]">
+<thead>
+<tr class="border-b border-outline">
+<th class="py-4 px-6 font-label-sm text-label-sm text-primary uppercase tracking-widest w-1/3">Advantage</th>
+<th class="py-4 px-6 font-label-sm text-label-sm text-primary uppercase tracking-widest w-2/3">Execution &amp; Orchestration</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md">
+<tr class="border-b border-outline-variant hover:bg-surface transition-colors">
+<td class="py-6 px-6 font-headline-md text-headline-md text-primary align-top">Interoperability Ledger</td>
+<td class="py-6 px-6 text-on-surface-variant align-top">Acts as the central interoperability ledger, unifying fragmented data across competitors (e.g., Apple, Garmin) and software alliances (e.g., MyFitnessPal, Swift).</td>
+</tr>
+<tr class="border-b border-outline-variant hover:bg-surface transition-colors">
+<td class="py-6 px-6 font-headline-md text-headline-md text-primary align-top">Asymmetric Network Effects</td>
+<td class="py-6 px-6 text-on-surface-variant align-top">Leverages a freemium model where indirect network externalities create insurmountable switching costs for users, locking in the community.</td>
+</tr>
+<tr class="hover:bg-surface transition-colors">
+<td class="py-6 px-6 font-headline-md text-headline-md text-primary align-top">Hardware Agnosticism</td>
+<td class="py-6 px-6 text-on-surface-variant align-top">Extracts value from advanced biosensor data (smartwatches, trackers) without the capital expenditure of physical product manufacturing.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- Section 4: The Hybrid Defense Strategy -->
+<section class="py-[6rem] px-margin-mobile bg-primary text-on-primary">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16 max-w-[800px] mx-auto">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-6">
+                        The Action Plan: Build &amp; Buy.
+                    </h2>
+<p class="font-body-lg text-body-lg text-on-primary-container font-light">
+                        To survive this innovation cycle and secure first-mover advantage, Strava cannot rely on internal engineering alone. It must execute a hybrid product strategy:
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Card 1 -->
+<div class="bg-primary-container border border-on-primary-fixed-variant p-8 md:p-12 hover:shadow-lg transition-all duration-300">
+<div class="mb-6 flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary-fixed text-[32px]" style="font-variation-settings: 'FILL' 1;">handshake</span>
+<h3 class="font-headline-md text-headline-md text-secondary-fixed">Strategic AI Alliance</h3>
+</div>
+<p class="font-body-md text-body-md text-on-primary-container leading-relaxed">
+                            Form a joint venture with a state-of-the-art AI firm. This immediately secures complex analytical capabilities, allowing Strava to cross the technological gap without the prohibitive latency of building foundational models from scratch.
+                        </p>
+</div>
+<!-- Card 2 -->
+<div class="bg-primary-container border border-on-primary-fixed-variant p-8 md:p-12 hover:shadow-lg transition-all duration-300">
+<div class="mb-6 flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary-fixed text-[32px]" style="font-variation-settings: 'FILL' 1;">account_tree</span>
+<h3 class="font-headline-md text-headline-md text-secondary-fixed">Internal Governance Unit</h3>
+</div>
+<p class="font-body-md text-body-md text-on-primary-container leading-relaxed">
+                            Deploy a cross-functional "heavyweight team" of internal data scientists and health experts. This unit controls the UX and product architecture, ensuring the external AI aligns with Strava’s core community mechanics while protecting proprietary data.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+</main><footer class="w-full bg-surface dark:bg-surface-container-low border-t border-outline-variant dark:border-outline">
+<div class="flex flex-col md:flex-row justify-between items-center py-section-padding px-margin-mobile max-w-container-max mx-auto gap-8 md:gap-0">
+<div class="font-label-sm text-label-sm font-bold text-primary text-center md:text-left">
+</div>
+<nav class="flex flex-wrap justify-center gap-6">
+</nav>
+</div>
+</footer></div>
+
+<script>
+function showScreen(id){
+    document.querySelectorAll('.app-screen').forEach(function(el){ el.style.display = 'none'; });
+    document.getElementById('screen-' + id).style.display = 'block';
+    document.getElementById('site-nav').style.display = (id === 'front') ? '' : 'none';
+    window.scrollTo(0, 0);
+}
+</script>
+
+</body></html>
